@@ -2,6 +2,8 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+
 <style>
 * {
   box-sizing: border-box;
@@ -10,9 +12,12 @@
 /* Create three equal columns that floats next to each other */
 .column {
   float: left;
-  width: 33.33%;
+  width: 30%;
   padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
+  text-align: center;
+  border-radius: 10px;
+  margin: 1%;
+  font-family: 'Roboto', sans-serif;
 }
 
 /* Clear floats after the columns */
@@ -20,6 +25,18 @@
   content: "";
   display: table;
   clear: both;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #9ca2a3;
+  padding: 20px;
+  
+  width: 95%;
+  margin: auto;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
@@ -31,24 +48,32 @@
 </style>
 </head>
 <body>
-
-<h2>Responsive Three Column Layout</h2>
-<p>Resize the browser window to see the responsive effect (the columns will stack on top of each other instead of floating next to each other, when the screen is less than 600px wide).</p>
-
+<div class="container">
+  <p>Responsive website</p> 
+  <h2>JONGMAC beeld | vorm | tekst/code</h2>
+  <p>Maak het browserscherm kleiner voor het gewenste effect</p> 
+  <p>de kolommen komen boven elkaar ipv naast elkaar</p>
+  <p>bij een schermbreedte van minder dan 600px.</p>
+</div>
+<br>
+<div class="container">
 <div class="row">
   <div class="column" style="background-color:#aaa;">
-    <h2>Column 1</h2>
-    <p>Some text..</p>
+    <h2>| beeld |</h2>
+    <img src="tovdef.png" height = 360 px width=360 px  alt="Plaatje"> 
+    <p>plaatje</p>
   </div>
   <div class="column" style="background-color:#bbb;">
-    <h2>Column 2</h2>
-    <p>Some text..</p>
+    <h2>| vorm |</h2>
+    <img src="tovdef.png" height = 360 px width=360 px alt="Plaatje"> 
+    <p>plaatje</p>
   </div>
   <div class="column" style="background-color:#ccc;">
-    <h2>Column 3</h2>
-    <p>Some text..</p>
+    <h2>| tekst/code |</h2>
+    <img src="tovdef.png" height = 360 px width=360 px alt="Plaatje"> 
+    <p>plaatje</p>
   </div>
 </div>
-
+</div>
 </body>
 </html>
